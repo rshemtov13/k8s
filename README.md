@@ -1,1 +1,1 @@
-# k8s
+# k8s and OpenShift practice
