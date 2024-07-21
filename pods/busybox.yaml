@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busyboxpod
+  labels:
+    name: busyboxpod
+spec:
+  containers:
+    - name: busyboxpod
+      image: busybox
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
