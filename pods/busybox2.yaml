@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busyboxpod
+  labels:
+    name: busyboxpod
+spec:
+  containers:
+    - name: busyboxctnr
+      command:
+        - /bin/sh
+        - "-c"
+        - echo "hello world!"
+      image: quay.io/quay/busybox
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "2"
